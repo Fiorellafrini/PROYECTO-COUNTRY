@@ -51,16 +51,14 @@ module.exports = { infoApi };
 //       return {
 //         id: data.cca3,
 //         name: data.name.common,
-//         flags: data.flags[1],
-//         continents: data.continents
-//           ? data.continents[0]
-//           : (data.continents[0] = "Continents not found"),
+//         flag: data.flags[1],
+//         continent: data.continents[0]
 //         capital: data.capital
 //           ? data.capital[0]
-//           : (data.capital = "Capital not found"),
+//           : (data.capital = "Esta capital no está registrada."),
 //         subregion: data.subregion
 //           ? data.subregion
-//           : (data.subregion = ""),
+//           : (data.subregion = "Esta subregión no está registrada."),
 //         area: data.area,
 //         population: data.population,
 //       };
