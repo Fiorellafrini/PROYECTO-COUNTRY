@@ -4,11 +4,12 @@ const { DataTypes } = require('sequelize');
 module.exports = sequelize => {
 	sequelize.define(
         'activity', {
-	id: {
-		type: DataTypes.INTEGER, //integer: numero entero
-        autoIncrement:true,
-		primaryKey: true,
-		},
+	//// no ponemos id pq seq lo crea por defecto y es un n entero que se incrementa de a uno
+  // id: { 
+	// 	type: DataTypes.INTEGER, //integer: numero entero
+  //         autoIncrement:true,
+	//     	  primaryKey: true,
+		// },
 	name: {
 		type: DataTypes.STRING,
 		allowNull: false,

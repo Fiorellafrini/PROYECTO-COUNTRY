@@ -4,26 +4,24 @@ const { DataTypes } = require('sequelize');
 module.exports = (sequelize) => {
   // defino el modelo
   sequelize.define(
-    'country', {
-id: {
-  type: DataTypes.STRING(3),
-  allowNull: false,
-  primaryKey: true,
-  // validate: {
-  //   isAlpha: true,
-  //   len: [3],
-  },
+    'country', 
+    {  
+  id: {
+   type: DataTypes.STRING, //Cadena string
+   allowNull: false, // No puede estar vacio
+   primaryKey: true, // Llave primaria
+    },
 name: {
   type: DataTypes.STRING,
   allowNull: false,
 },
 flag: {
   type: DataTypes.STRING,
-  allowNull: false,
+  allowNull: false,// HAY PAISES SIN BANDERA
 },
 continent: {
   type: DataTypes.STRING,
-  allowNull: false,
+  allowNull: false, //HAY PAISES SIN CONTINENTES
 },
 capital: {
   type: DataTypes.STRING,
