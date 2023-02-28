@@ -28,7 +28,7 @@ conn.sync({ force: true }).then(() => {
   console.log('DB CONECTADA');
   
     server.listen(3001, async() => {
-      console.log('%s listening at 3001'); // eslint-disable-line no-console
+      // console.log('%s listening at 3001'); // eslint-disable-line no-console
 
      await infoApi()
 // await getDb()

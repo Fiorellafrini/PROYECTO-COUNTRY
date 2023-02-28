@@ -1,24 +1,32 @@
 const { Router } = require("express");
+const { postCreateActivity, getAllActivity } = require("../controllers/activityControllers");
 const activityRouter = Router();
 
+activityRouter.post("/", async (req, res) => {
+  const { name, difficulty, duration, season, id } = req.body;
 
+  try {
+    const result = await postCreateActivity(
+        name,
+        difficulty,
+        duration,  
+        season,     
+        id
+    );
+    return res.status(200).json(result);
+  } catch (error) {
+    // console.log("estoy acá");
+    return res.status(400).json({ error: error.message });
+  }
+});
 
-// -  Esta ruta recibirá todos los datos necesarios para crear una actividad turística y relacionarla con los países solicitados.
-// -  Toda la información debe ser recibida por body.
-// -  Debe crear la actividad turística en la base de datos, y esta debe estar relacionada con los países indicados (al menos uno).
-activityRouter.post('/', (req,res) =>{
-
-})
-
-
-
-
-
-
-// -  Obtiene un arreglo de objetos, donde cada objeto es una actividad turística.
-
-activityRouter.get('/', (req,res) =>{
-
-})
+activityRouter.get('/getAllActivity', async(req,res) =>{
+        try {
+            const allActivity = await getAllActivity();
+            res.status(200).json(allActivity);   
+        } catch (error) {
+            res.status(404).send('Hubo un problema')
+        }
+    })
 
 module.exports = activityRouter;

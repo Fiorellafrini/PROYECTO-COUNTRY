@@ -5,37 +5,31 @@ module.exports = sequelize => {
 	sequelize.define(
         'activity', {
 	//// no ponemos id pq seq lo crea por defecto y es un n entero que se incrementa de a uno
-  // id: { 
-	// 	type: DataTypes.INTEGER, //integer: numero entero
-  //         autoIncrement:true,
-	//     	  primaryKey: true,
-		// },
+  id: { 
+		type: DataTypes.INTEGER, //integer: numero entero
+          autoIncrement:true,
+	    	  primaryKey: true,
+		},
 	name: {
 		type: DataTypes.STRING,
 		allowNull: false,
 		},
     difficulty: {
-		type: DataTypes.ENUM('1', '2', '3', '4', '5'),
-        // type: DataTypes.INTEGER,
-        // allowNull: false,
-        // validate: {
-        //   isInt: true,
-        //   min: 1,
-        //   max: 5,
-        // },
-		},
-    duration: {
+      type: DataTypes.ENUM({
+        // Valores predefinidos para seleccionar
+        values: ["1", "2", "3", "4", "5"],
+      }),
+    },
+  duration: {
        type: DataTypes.INTEGER,
-       allowNull: false,
-    //    validate: {
-    //      isInt: true,
-    //      min: 1,
-    //    },
+       defaultValue: "1"
+  
         },
-	season: {
-		type: DataTypes.ENUM('spring', 'summer', 'fall' ,'winter '),
-        allowNull: false,
-		},
+    season: {
+      type: DataTypes.ENUM({
+        values: ["Summer", "Fall", "Spring", "Winter"],
+      }),
+    },
     
     },{timestamps:false});
 };
