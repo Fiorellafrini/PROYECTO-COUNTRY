@@ -1,5 +1,5 @@
 const { Router } = require("express");
-const { getAll, getCountryId, getCountryName } = require("../controllers/countryControllers");
+const { getAll, getCountryId, getCountryName, deleteCountry } = require("../controllers/countryControllers");
 const countryRouter = Router();
 
 
@@ -40,6 +40,39 @@ countryRouter.get('/', async(req,res)=>{
           res.status(400).send(error.message);
         }
       });
+
+
+
+
+// // -  Route para borrar/delete - Eliminamos Country
+
+countryRouter.delete("/delete/:id", async (req, res) => {
+  try {
+    const { id } = req.params;
+    const countryDelete = await deleteCountry(id);
+    res.status(200).send({message: "Country eliminada", element: countryDelete})
+  } catch (error) {
+    res.status(400).send("Problema al eliminar");
+  }
+});
+
+// // - Route para modificar/editar Country
+
+// countryRouter.put("/edit/:id", async (req, res) => {
+//   try {
+//     const { id } = req.params;
+//     // const { name, image, summary, healthScore, steps, dishTypes } =
+//     //   req.body;
+//     // console.log(name);
+//     const recipe = {
+//       id
+    
+//     };
+//     res.status(200).send({ message: "El pais fue editado"});
+//   } catch (error) {
+//     res.status(401).send(error.message);
+//   }
+// });
 
 
 module.exports = countryRouter;

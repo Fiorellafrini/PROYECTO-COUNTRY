@@ -24,7 +24,7 @@ const { conn } = require('./src/db.js');
 
 
 // Syncing all the models at once.
-conn.sync({ force: true }).then(() => {
+conn.sync({ force: false }).then(() => {
   console.log('DB CONECTADA');
   
     server.listen(3001, async() => {
