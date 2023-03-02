@@ -1,18 +1,19 @@
 .bodyLanding{
         background-image: url("https://images2.alphacoders.com/661/66162.jpg");
+        height: 800px;
+        background-size: auto;
+        padding: 8em;
+        background-repeat: no-repeat;
+}
+
         /* ("https://images2.alphacoders.com/661/66162.jpg");     */
         /* "https://images7.alphacoders.com/386/386860.jpg" */
         /* ("https://images2.alphacoders.com/595/595519.jpg"); */
-        
         /* display: flex; */
         /* justify-content: center; */
         /* align-items: center; */
-        height: 800px;
         /* background-position: 50% 50%; */
-background-size: auto;
-padding: 8em;
-background-repeat: no-repeat;
-}
+
 
 .land button{
       background-color: blanchedalmond;  

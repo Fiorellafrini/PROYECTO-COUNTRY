@@ -5,9 +5,10 @@ import styles from "./HomePage.module.css"
 const HomePage = () => {
     return (
         <div className={styles.body}>
-            {/* <div className={styles.home}> */}
+            <div className={styles.home}>
+                home
                  
-            {/* </div> */}
+            </div>
         </div>
     )
 }
