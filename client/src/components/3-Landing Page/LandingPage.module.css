@@ -1,0 +1,29 @@
+.bodyLanding{
+        background-image: url("https://images2.alphacoders.com/661/66162.jpg");
+        /* ("https://images2.alphacoders.com/661/66162.jpg");     */
+        /* "https://images7.alphacoders.com/386/386860.jpg" */
+        /* ("https://images2.alphacoders.com/595/595519.jpg"); */
+        
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        height: 800px;
+        /* background-position: 50% 50%; */
+background-size: auto;
+padding: 8em;
+background-repeat: no-repeat;
+}
+
+.land button{
+      background-color: blanchedalmond;  
+      background: #a371306c;
+      /* border: none; */
+      /* padding: 15px 25px; */
+      font-family: sans-serif;
+      /* font-size: 25px; */
+      color: white;
+      /* margin-top: 25px; */
+      margin-left: 5px;
+      transition: all ease-in-out 0.2s;
+      border-radius: 3px;
+}

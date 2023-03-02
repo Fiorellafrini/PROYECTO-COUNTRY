@@ -1,0 +1,13 @@
+.body {
+    /* background-color:rgb(90, 106, 116); */
+    background-image: url("https://images.alphacoders.com/114/11433.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    height:auto;
+
+
+}
+
+.home {
+    background-color: blueviolet;
+}

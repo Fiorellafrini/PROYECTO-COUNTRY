@@ -14,11 +14,13 @@ module.exports = sequelize => {
 		type: DataTypes.STRING,
 		allowNull: false,
 		},
-    difficulty: {
-      type: DataTypes.ENUM({
+  difficulty: {
+    type: DataTypes.ENUM({
         // Valores predefinidos para seleccionar
         values: ["1", "2", "3", "4", "5"],
       }),
+		// allowNull: false,
+
     },
   duration: {
        type: DataTypes.INTEGER,

@@ -1,0 +1,24 @@
+.bodynav {
+ background-color: rgba(222, 184, 135, 0.552);
+ height: 50px;
+ text-align: center;
+ padding-top: 40px;
+ border-radius: 10px;
+ position: relative;
+  
+
+}
+
+.link button{
+    /* background-color: blanchedalmond;   */
+    background: #cfcdcace;
+    font-family: sans-serif;
+    margin-left: 5px;
+    transition: all ease-in-out 0.2s;
+    border-radius: 3px;
+    /* font-size: 25px; */
+    /* color: white; */
+    /* margin-top: 25px; */
+    /* border: none; */
+    /* padding: 15px 25px; */
+}

@@ -1,0 +1,7 @@
+.detail {
+    background-color:rgba(143, 188, 143, 0.865);
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 200px;
+}
