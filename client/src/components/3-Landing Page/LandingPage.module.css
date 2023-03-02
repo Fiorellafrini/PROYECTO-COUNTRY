@@ -4,6 +4,7 @@
         background-size: auto;
         padding: 8em;
         background-repeat: no-repeat;
+        border-radius: 10px;
 }
 
         /* ("https://images2.alphacoders.com/661/66162.jpg");     */
@@ -14,10 +15,9 @@
         /* align-items: center; */
         /* background-position: 50% 50%; */
 
-
 .land button{
-      background-color: blanchedalmond;  
-      background: #a371306c;
+      /* background-color: rgb(228, 8, 8);   */
+      background: #3068a36c;
       /* border: none; */
       /* padding: 15px 25px; */
       font-family: sans-serif;
@@ -27,4 +27,10 @@
       margin-left: 5px;
       transition: all ease-in-out 0.2s;
       border-radius: 3px;
+}
+
+.title{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: blueviolet;
+  font-size: larger;
 }

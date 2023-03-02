@@ -5,7 +5,9 @@ import styles from "./LandingPage.module.css"
 const LandingPage = () => {
     return (
         <div className={styles.bodyLanding}>
-            LANDING
+           <div className={styles.title}>
+            To travel the world!
+            </div>
           <div className={styles.land}>
             <Link  to="/home">
               <button>HOME</button>
