@@ -29,8 +29,48 @@
       border-radius: 3px;
 }
 
-.title{
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: blueviolet;
-  font-size: larger;
+.title1{
+        font-family: "fontnew" ;
+        color: rgb(241, 241, 226);
+        font-size:200px;
+        justify-content: center;
+        /* -webkit-text-stroke: 1px rgb(13, 14, 13); */
+
+}
+
+.title2{
+        font-family: "fontnew" ;
+        color: rgb(194, 198, 202);
+        font-size:40px;
+        justify-content: center;
+        /* /* -webkit-text-stroke: #3068a36c; */
+}
+
+
+.land button{
+      background: #3068a36c;
+      border: none;
+      padding: 15px 25px;
+      font-family: sans-serif;
+      color: white;
+      margin-top: 25px;
+      margin-left: 10px;
+      transition: all ease-in-out 0.2s;
+      border-radius: 3px;
+      /* font-size: 25px; */
+
+
+      
+}
+/* hover {
+        .land button{
+        background-color: #5208c1;
+        }
+     } */
+
+
+@font-face {
+        font-family: "fontnew";
+        src: url('../images-font/Heaters.otf');
+
 }
