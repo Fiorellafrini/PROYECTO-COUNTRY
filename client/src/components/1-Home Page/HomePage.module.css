@@ -1,10 +1,16 @@
-body {
-    background-color:rgb(90, 106, 116);
+.body {
+    /* background-color:rgb(90, 106, 116); */
     background-image: url("https://images.alphacoders.com/114/11433.jpg");
     background-position:center;  
     background-size: auto;
     padding: 2em;
     background-repeat: no-repeat;
+    height:2000px;
+    width: 1435px;
+    border-radius: 10px;
+    position:absolute;
+
+
     
 }
 /* .home {

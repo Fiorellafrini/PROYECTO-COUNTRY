@@ -1,7 +1,7 @@
 .bodynav {
- background-color: rgba(222, 184, 135, 0.552);
+ background-color: rgb(87, 155, 109);
  height: 50px;
- text-align: center;
+ /* text-align: center; */
  padding-top: 40px;
  border-radius: 10px;
  position: relative;
@@ -11,14 +11,21 @@
 
 .link button{
     /* background-color: blanchedalmond;   */
-    background: #cfcdcace;
+    /* background: #1b828ace;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: all ease-in-out 0.2s;
+    border-radius: 8px;
+    border: none; */
+
+
+    background: #3068a36c;
+    border: none;
+    padding: 15px 25px 15px 25px;
     font-family: sans-serif;
+    color: white;
+    margin-bottom: 25px;
+    /* margin-right: 25px; */
     margin-left: 5px;
     transition: all ease-in-out 0.2s;
     border-radius: 3px;
-    /* font-size: 25px; */
-    /* color: white; */
-    /* margin-top: 25px; */
-    /* border: none; */
-    /* padding: 15px 25px; */
 }
