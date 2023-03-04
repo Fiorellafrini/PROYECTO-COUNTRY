@@ -1,23 +1,16 @@
 .bodynav {
- background-color: rgb(87, 155, 109);
- height: 50px;
- /* text-align: center; */
+ background-color: rgba(87, 155, 109, 0.726);
+ width: 100%;
  padding-top: 40px;
  border-radius: 10px;
- position: relative;
+ position:absolute;
+ background-attachment: fixed;
+ background-position:center;  
   
 
 }
 
 .link button{
-    /* background-color: blanchedalmond;   */
-    /* background: #1b828ace;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    transition: all ease-in-out 0.2s;
-    border-radius: 8px;
-    border: none; */
-
-
     background: #3068a36c;
     border: none;
     padding: 15px 25px 15px 25px;
@@ -29,3 +22,7 @@
     transition: all ease-in-out 0.2s;
     border-radius: 3px;
 }
+
+.link button:hover {
+    background: rgb(0, 0, 0);
+  }    

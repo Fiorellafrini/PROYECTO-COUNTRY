@@ -1,15 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./LandingPage.module.css"
-// import videolanding from "./images-font/videolanding.mp4";
+import videolanding from "../images-font/videolanding.mp4";
 
 const LandingPage = () => {
     return (
       
       <div className={styles.bodyLanding}>
-          {/* <video autoPlay muted loop className={styles.video}>
-             <source src={videolanding} type="video/mp4"></source>
-           </video> */}
+        
        
        <div className={styles.title1}>           
         Welcome 
@@ -32,7 +30,10 @@ const LandingPage = () => {
           <button>ABOUT</button>
         </Link>
         </div>
-    
+      
+        <video autoPlay muted loop className={styles.video}>
+             <source src={videolanding} type="video/mp4"></source>
+           </video>
     
   </div>
         // <div className={styles.bodyLanding}>

@@ -1,31 +1,22 @@
- /* *{
-        padding: 0px;
-        margin: 0px;
-      }
-      
-      .bodyLanding {
-        background-color: rgb(92, 53, 3);
-        width: 100%;
-        height: 100%;
-        position: absolute;
-      }
       
       .video {
         position: fixed;
-        height: 150%;
-        width: 120%;
-        margin-top: -100px;
+        height: 900px;
+        top:50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: -1;
       }
-        */
+       
 
-.bodyLanding{
+/* .bodyLanding{
         background-image: url("https://images2.alphacoders.com/661/66162.jpg");
         height: 800px;
         background-size: auto;
         padding: 8em;
         background-repeat: no-repeat;
         border-radius: 10px;
-} 
+}  */
 
         /* ("https://images2.alphacoders.com/661/66162.jpg");     */
         /* "https://images7.alphacoders.com/386/386860.jpg" */
@@ -35,19 +26,6 @@
         /* align-items: center; */
         /* background-position: 50% 50%; */
 
-.land button{
-      /* background-color: rgb(228, 8, 8);   */
-      background: #3068a36c;
-      /* border: none; */
-      /* padding: 15px 25px; */
-      font-family: sans-serif;
-      /* font-size: 25px; */
-      color: white;
-      /* margin-top: 25px; */
-      margin-left: 5px;
-      transition: all ease-in-out 0.2s;
-      border-radius: 3px;
-}
 
 .title1{
         font-family: "fontnew" ;
@@ -60,7 +38,7 @@
 
 .title2{
         font-family: "fontnew" ;
-        color: rgb(194, 198, 202);
+        color: rgb(0, 0, 0);
         font-size:40px;
         justify-content: center;
         /* /* -webkit-text-stroke: #3068a36c; */
@@ -68,7 +46,7 @@
 
 
 .land button{
-      background: #3068a36c;
+      background: #3068a38e;
       border: none;
       padding: 15px 25px;
       font-family: sans-serif;
@@ -77,20 +55,11 @@
       margin-left: 10px;
       transition: all ease-in-out 0.2s;
       border-radius: 3px;
-      /* font-size: 25px; */
-
-
-      
 }
 
-
-
-
-/* hover {
-        .land button{
-        background-color: #5208c1;
-        }
-     } */
+.land button:hover {
+        background: rgb(0, 0, 0);
+      }    
 
 
 @font-face {
