@@ -6,10 +6,16 @@ module.exports = (sequelize) => {
   sequelize.define(
     'country', 
     {  
+
+//   key:{
+// type: DataTypes.STRING,
+// unique: true
+//   },
   id: {
    type: DataTypes.STRING, //Cadena string
    allowNull: false, // No puede estar vacio
    primaryKey: true, // Llave primaria
+   unique: true,
     },
 name: {
   type: DataTypes.STRING,

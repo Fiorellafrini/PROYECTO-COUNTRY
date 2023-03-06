@@ -4,9 +4,9 @@ import styles from "./Navbar.module.css";
 
 
 const Navbar = () => {
-    return (
-        <div className={styles.bodynav}>
-           <div className={styles.link}>
+return (
+    <div className={styles.bodynav}>
+        <div className={styles.link}>
             <Link to="/">
                 <button>LANDING</button>
             </Link>
@@ -29,8 +29,8 @@ const Navbar = () => {
                 <button>DETAIL</button>
             </Link>
         </div>
-        </div>
-    )
+    </div>
+)
 }
 
 export default Navbar;

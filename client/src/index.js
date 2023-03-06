@@ -4,17 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
-import store  from "./redux/store";
+import store  from "./redux/store"; 
 import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
-    <React.StrictMode>
+    // <React.StrictMode>
+      <Provider store={store}> 
+      {/* el provider es el encargado de conectar react y redux, envuelve a react y le presenta el store( el estado global) para que lo use cuando quiera */}
         <BrowserRouter>
-      <Provider store={store}>
           <App />
-      </Provider>
-      </BrowserRouter>
-    </React.StrictMode>,
+        </BrowserRouter>
+      </Provider>,
+    // </React.StrictMode>,
   document.getElementById('root')
 );
 

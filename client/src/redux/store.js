@@ -1,5 +1,5 @@
 import { createStore, applyMiddleware } from "redux";
-import thunkMiddleware from "redux-thunk"; // es para usar acciones asincronicas
+import thunkMiddleware from "redux-thunk"; // es un middlewere para usar acciones asincronicas, es un traductor que ayuda a comunicar el client con el servidor 
 import rootReducer from "./reducer";
 import { composeWithDevTools } from "redux-devtools-extension"; // esta línea es para conectar con la extensión del navegador => REDUX DEVTOOLS 
 

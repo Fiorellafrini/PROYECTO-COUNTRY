@@ -1,29 +1,45 @@
 //importar actions
-// import { GET_COUNTRIES } from "./actions";
+import {
+    GET_COUNTRIES,
+    GET_ACTIVITIES,
+    GET_DETAIL,
+    POST_ACTIVITIES,
+  } from "./actionsTypes";
+  
 
 
 const initialState= { //ESTADOS QUE NECESITO, las cosas que quiero guardar
-    pageCountries:[],
     allCountries: [], //DONDE VOY A GUARDAR TODAS LAS COUNTRIES ,Es necesario hacer una copia de todos los paises para realizar los filtrados
     detail: [], //para guardar una sola
-    countries: [], //almaceno las countries
     activities: [], //almaceno las activities
-    // filters: {"ascendente", "descendente"},
+    // filters: {"ascendente", "descendente"}, 
     // filters: { activities: "All", continents: "All" },
 
 }
 
-
-
-
-
 const rootReducer = (state = initialState, action) => {
-    switch(action.type){
-        case "GET_COUNTRIES":
+    switch(action.type){ // el switch va ir evaluando el tipo de action
+        case GET_COUNTRIES:
             return {
                 ...state,
-                countries: action.payload,
+                allCountries: action.payload, // ese payload es el que viene de la actions, en este caso tiene la data de todas conuntrys.
             };
+        case GET_ACTIVITIES:
+            return {
+              ...state,
+              activities: action.payload,
+                };
+          
+        case GET_DETAIL:
+            return {                
+                ...state,
+             detail: action.payload,
+                };
+            case POST_ACTIVITIES:
+                return {
+                  ...state, // retorna una copia de todo el estado
+                };
+          
 
         default:
             return state
