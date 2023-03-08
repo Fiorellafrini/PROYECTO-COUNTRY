@@ -27,7 +27,7 @@ const DetailPage = () => {
           <div className={styles.descripcion}>
             <p className={styles.name}>Name :  {name}</p>
             <img className={styles.img} src={flag}alt={flag}></img>
-
+            <p>Id : {id}</p>
             <p>Continent : {continent}</p>
             <p>Capital : {capital}</p>
             <p>Subregion : {subregion}</p>

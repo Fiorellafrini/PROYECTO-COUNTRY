@@ -40,7 +40,7 @@ const AllCards = () => {
                 flag={element.flag}
                 key={element.id} // el key es para uso interno de react y ahi entinede que las cartas son distintas.
                 id={element.id}
-                continent={element.continents}
+                continent={element.continent}
                 capital={element.capital}
                 subregion={element.subregion}
                 area={element.area}
@@ -58,3 +58,66 @@ const AllCards = () => {
 
 export default AllCards;
 
+/////////////////////COMPONENTE DE CLASE
+// import React from "react";
+// import { connect } from "react-redux";
+// import { getCountries } from "../../redux/actions";
+// import CardCountry from "../6-CardCountry/CardCountry"; // me traigo la carta
+// import styles from "./AllCards.module.css"
+
+
+
+// class AllCards extends React.Component{ //extiende tra info de otro lado
+//     constructor(props){
+//         super(props) // el super trae propiedades al component
+//     }
+// //aca se monta
+//     componentDidMount(){
+//         this.props.getCountries();
+//     }
+
+
+//     render(){
+//         return(
+//             <div>
+//             <div className={styles.cards}>
+        
+//         {
+//             this.props.allCountries?.map(element => { // si hay algo ? hace esto
+//                 return <CardCountry
+//                 name={element.name}
+//                 flag={element.flag}
+//                 key={element.id} // el key es para uso interno de react y ahi entinede que las cartas son distintas.
+//                 id={element.id}
+//                 continent={element.continent}
+//                 capital={element.capital}
+//                 subregion={element.subregion}
+//                 area={element.area}
+//                 population={element.population}
+//                 ></CardCountry>
+//             })
+//         }
+
+//         </div>
+//         </div>
+//         )
+//     }
+// }
+
+// const mapStateToProps = (state) =>{
+//     return{
+//         allCountries: state.allCountries
+//     } 
+// }
+
+// const mapDispatchToProps = (dispatch) => {
+//     return{
+//         getCountries: () => dispatch(getCountries())
+
+//     }
+// }
+// // tanto getcountries y allcards me llegan como props al constructor y super gracias al connect
+
+
+
+// export default connect(mapStateToProps, mapDispatchToProps)(AllCards);

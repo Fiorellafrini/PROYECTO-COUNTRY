@@ -7,15 +7,16 @@
     background-color: rgba(240, 248, 255, 0.119);
   }
 
-.img {
+/* .img {
     width: 350px;
-    display:flex;
+    display:block;
     font-size: 13px;
     border: 10px solid #ffffff4d;
     border-radius: 4px;
     margin-top: 2%;
     margin-left: 36%;
-}
+
+} */
 
 .name{
   color: black;
@@ -32,16 +33,6 @@ border-radius: 20%;
   /* font-size-adjust: none; */
   font-family:"fontnew2";
   box-shadow: 0px 2px 26px rgb(0, 0, 0);
-  /* position: */
-}
-@font-face {
-  font-family: "fontnew2";
-  src: url("../../components/images-font/Ascrada.ttf")
-}
-
-@font-face {
-  font-family: "fontnew";
-  src: url('../images-font/Heaters.otf');
 
 }
 
@@ -55,9 +46,21 @@ border-radius: 20%;
   margin-bottom: 25px;
   margin-left: 5px;
   transition: all ease-in-out 0.2s;
-  border-radius: 3px;
+  border-radius: 50%;
 }
 
 .link button:hover {
   background: rgba(236, 228, 228, 0.585);
 }  
+
+
+@font-face {
+  font-family: "fontnew2";
+  src: url("../../components/images-font/Ascrada.ttf")
+}
+
+@font-face {
+  font-family: "fontnew";
+  src: url('../images-font/Heaters.otf');
+
+}
