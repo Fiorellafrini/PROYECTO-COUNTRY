@@ -24,10 +24,7 @@ return (
                 <button>CREATE</button>
             </Link>
            
-            
-            <Link to="/detailpage">
-                <button>DETAIL</button>
-            </Link>
+
         </div>
     </div>
 )

@@ -1,13 +1,31 @@
-/* .button {
-    background: #062b165b;
-    width: 80%;
-    padding: 15px 25px;
-    font-family: sans-serif;
-    color: white;
-    transition: all ease-in-out 0.2s;
-    margin-top: 25px;
-  } */
-  /* .flag {
-    width: 100%;
-    border-radius: 10%;
-  } */
+.name{
+  font-family:fontnew;
+  color: rgb(3, 2, 2);
+  font-size: 40px;
+}
+
+@font-face {
+  font-family: "fontnew";
+  src: url('../images-font/Heaters.otf');
+}
+
+.link{
+    text-decoration: none;
+}
+
+/* .img {
+    border: 1px solid #0c0c0c;
+    border-radius: 4px;
+    padding: 5px;
+    width: 250px;
+  }
+  img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
+}  */
+
+.card:hover{
+  box-shadow: 0px 0px 15px 15px #000000;
+  -webkit-box-shadow: 0px 0px 15px 15px #0a0a0a;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  }

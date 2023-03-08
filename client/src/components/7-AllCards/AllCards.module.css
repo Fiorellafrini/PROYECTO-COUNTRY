@@ -3,7 +3,7 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
     justify-content: center;
     padding-top: 80px;
-    background-color: rgba(20, 15, 15, 0.877);
+    background-color: rgba(150, 136, 136, 0.485);
     border-radius: 20px;
     margin-top: 6%;
     margin-left: -2%;
@@ -15,3 +15,12 @@
     -webkit-transform-style: preserve-3d;
     transform: rotateY(180deg);
     transform-style: preserve-3d;} */
+/* .img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+  }
+  img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+} */

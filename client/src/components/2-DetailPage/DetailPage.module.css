@@ -1,0 +1,49 @@
+.cardsGrid {
+    display: grid;
+    gap: 2em;
+    background-image: url("https://images.alphacoders.com/114/11433.jpg");
+    padding: 10em;
+    height: 100%;   
+    background-color: rgba(240, 248, 255, 0.119);
+  }
+
+.img {
+    width: 350px;
+    display:flex;
+    font-size: 13px;
+    border: 10px solid #ffffff4d;
+    border-radius: 4px;
+    margin-top: 2%;
+    margin-left: 36%;
+}
+
+
+.descripcion {
+  color: #fff9f9;
+  font-size: 30px;
+  /* font-size-adjust: none; */
+  font-family:"fontnew2";
+  box-shadow: 0px 2px 26px rgb(0, 0, 0);
+  /* position: */
+}
+@font-face {
+  font-family: "fontnew2";
+  src: url("../../components/images-font/Ascrada.ttf")
+}
+
+.link button{
+  background: #3068a36c;
+  border: none;
+  padding: 15px 25px 15px 25px;
+  font-family: "fontnew2";
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 25px;
+  margin-left: 5px;
+  transition: all ease-in-out 0.2s;
+  border-radius: 3px;
+}
+
+.link button:hover {
+  background: rgba(236, 228, 228, 0.585);
+}  

@@ -33,10 +33,9 @@ const AllCards = () => {
     return( 
         <div>
             <div className={styles.cards}>
-                
                 {allCountries.length > 0 ? allCountries.map(element => 
-                // <Link key={element.id} to={`/detail/${element.name}`}>
-                <CardCountry 
+                
+                <CardCountry
                 name={element.name}
                 flag={element.flag}
                 key={element.id} // el key es para uso interno de react y ahi entinede que las cartas son distintas.
@@ -46,16 +45,16 @@ const AllCards = () => {
                 subregion={element.subregion}
                 area={element.area}
                 population={element.population}
-                />
-             /* </Link> */
+                ></CardCountry>
                 )
                 : 
                 <h1>Loanding...</h1>}
                 
             </div>
-        </div>
+         </div>
     )}
                  
 
 
 export default AllCards;
+
