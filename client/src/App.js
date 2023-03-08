@@ -15,8 +15,7 @@ function App() {
   return (
     <div className="App">
       
-      {location.pathname !== '/' &&  <Navbar />} 
-       {/* {location.pathname !== "/countries/:id" && <Navbar />}   s */}
+      {location.pathname !== "/" && location.pathname !== "/countries/:id" && <Navbar/>}  
 
         <Route exact path="/" component={LandingPage} />
         {/* VAS A MOSTRAR A LANDINGPAGE */}

@@ -25,8 +25,9 @@ const DetailPage = () => {
     return (
         <div className={styles.cardsGrid}> 
           <div className={styles.descripcion}>
+            <p className={styles.name}>Name :  {name}</p>
             <img className={styles.img} src={flag}alt={flag}></img>
-            <p>Name :  {name}</p>
+
             <p>Continent : {continent}</p>
             <p>Capital : {capital}</p>
             <p>Subregion : {subregion}</p>

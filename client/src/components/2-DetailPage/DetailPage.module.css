@@ -17,6 +17,14 @@
     margin-left: 36%;
 }
 
+.name{
+  color: black;
+  font-family: "fontnew";
+  color: rgb(0, 0, 0);
+  font-size:60px;
+  background-color: #fff9f999;
+border-radius: 20%;
+}
 
 .descripcion {
   color: #fff9f9;
@@ -29,6 +37,12 @@
 @font-face {
   font-family: "fontnew2";
   src: url("../../components/images-font/Ascrada.ttf")
+}
+
+@font-face {
+  font-family: "fontnew";
+  src: url('../images-font/Heaters.otf');
+
 }
 
 .link button{
