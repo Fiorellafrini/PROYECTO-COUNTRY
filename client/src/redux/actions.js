@@ -2,6 +2,7 @@ import axios from "axios";// si quiero traerme los personajes del back a mi fron
 import { GET_COUNTRIES } from "./actionsTypes";
 import { GET_ACTIVITIES } from "./actionsTypes";
 import { GET_DETAIL } from "./actionsTypes";
+import { SEARCH_COUNTRIES_BY_NAME } from "./actionsTypes"
 // import { CLEAN_DETAIL } from "./actionsTypes";
 // import { POST_ACTIVITIES } from "./actionsTypes";
 
@@ -80,4 +81,25 @@ export function getActivities() {
       );
       return response;
     };
+  }
+
+  export const getCountryName = (name) => {
+    return function (dispatch) {
+      fetch(`http://localhost:3001/countries?name=${name}`)
+        .then((response) => response.json())
+        .then((data) => dispatch({ type: SEARCH_COUNTRIES_BY_NAME, payload: data }))
+        .catch((error) => {
+          window.alert("Country not found!");
+        });
+    };
+  };
+
+
+  export const filterContinent = () =>{
+
+  }
+
+
+  export const filterActivity = () => {
+
   }

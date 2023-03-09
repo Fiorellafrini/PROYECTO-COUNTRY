@@ -1,26 +1,29 @@
 .bodynav {
  background-color: rgba(255, 255, 255, 0.324);
- width: 100%;
- padding-top: 25px;
+ padding-top: 15px;
+ padding-bottom: 15px;
  border-radius: 10px;
- position:absolute;
  background-attachment: fixed;
  background-position:center;  
-
+ margin-top: 1%;
+ margin-left: -2%;
+ margin-right: 2%;
 }
 
 .link button{
     background: #2f649e6c;
     border: none;
-    padding: 15px 25px 15px 25px;
+    padding: 15px 50px 10px;
     font-family: "fontnew2";
-    font-size: 30px;
+    font-size: 25px;
     color: rgb(0, 0, 0);
-    margin-bottom: 25px;
-    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
     transition: all ease-in-out 0.2s;
     border-radius: 3px;
+    /* position: grid; */
 }
+
 
 @font-face {
     font-family: "fontnew9";

@@ -1,12 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
+import Searchbar from "../10-Searchbar/Searchbar"
 
 
 const Navbar = () => {
 return (
     <div className={styles.bodynav}>
         <div className={styles.link}>
+            <nav>
+
             <Link to="/">
                 <button>LANDING</button>
             </Link>
@@ -24,8 +27,14 @@ return (
                 <button>CREATE</button>
             </Link>
            
-
+            </nav>
         </div>
+        
+        <Searchbar>
+
+        
+        </Searchbar>
+
     </div>
 )
 }

@@ -4,6 +4,7 @@ import {
     GET_ACTIVITIES,
     GET_DETAIL,
     POST_ACTIVITIES,
+    SEARCH_COUNTRIES_BY_NAME
     // CLEAN_DETAIL,
   } from "./actionsTypes";
   
@@ -15,8 +16,9 @@ const initialState= { //ESTADOS QUE NECESITO, las cosas que quiero guardar
     activities: [], //almaceno las activities
     // filters: {"ascendente", "descendente"}, 
     // filters: { activities: "All", continents: "All" },
+    filteredCountries: [],
+  };
 
-}
 
 const rootReducer = (state = initialState, action) => {
     switch(action.type){ // el switch va ir evaluando el tipo de action
@@ -36,6 +38,12 @@ const rootReducer = (state = initialState, action) => {
                 ...state,
              detail: action.payload
                 };
+
+                case SEARCH_COUNTRIES_BY_NAME:
+                    return {
+                      ...state,
+                      allCountries:action.payload,
+                    };
 
         // case CLEAN_DETAIL:
         //     return {

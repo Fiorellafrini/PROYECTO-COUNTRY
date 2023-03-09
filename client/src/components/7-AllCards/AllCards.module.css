@@ -2,10 +2,10 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
     justify-content: center;
-    padding-top: 80px;
+    padding-top: 10px;
     background-color: rgba(150, 136, 136, 0.485);
     border-radius: 20px;
-    margin-top: 6%;
+    margin-top: 1%;
     margin-left: -2%;
     margin-right: 2%;
 }
