@@ -6,7 +6,7 @@ import React from "react"
 const CardCountry = ({name, flag, id, continent}) => {
     return (
         <div className={styles.card}>
-            
+            {/* <button onClick={onClose}>X</button> */}
             <Link to= {`/countries/${id}`} className={styles.link}>
             <h3 className={styles.name}>{name}</h3>
 

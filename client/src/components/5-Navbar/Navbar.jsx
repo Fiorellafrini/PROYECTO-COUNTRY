@@ -30,10 +30,7 @@ return (
             </nav>
         </div>
         
-        <Searchbar>
-
-        
-        </Searchbar>
+        <Searchbar></Searchbar>
 
     </div>
 )

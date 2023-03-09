@@ -3,9 +3,13 @@ import {
     GET_COUNTRIES,
     GET_ACTIVITIES,
     GET_DETAIL,
-    POST_ACTIVITIES,
-    SEARCH_COUNTRIES_BY_NAME
-    // CLEAN_DETAIL,
+    // POST_ACTIVITIES,
+    SEARCH_COUNTRIES_BY_NAME,
+    DELETE_COUNTRY,
+    FILTER_ACTIVITY,
+    FILTER_CONTINENT,
+    ORDER_POPULATION,
+    ORDER_NAME
   } from "./actionsTypes";
   
 
@@ -39,22 +43,36 @@ const rootReducer = (state = initialState, action) => {
              detail: action.payload
                 };
 
-                case SEARCH_COUNTRIES_BY_NAME:
-                    return {
-                      ...state,
-                      allCountries:action.payload,
-                    };
+        case SEARCH_COUNTRIES_BY_NAME:
+            return {
+               ...state,
+             allCountries:action.payload,
+                 };
+        case DELETE_COUNTRY:
+          return {
+              ...state,
+              allCountries:[]
+          }
+        case FILTER_CONTINENT:
+          return{
 
-        // case CLEAN_DETAIL:
-        //     return {
-        //         ...state,
-        //         detail: [] 
-        //     };
+          }
+        case FILTER_ACTIVITY:
+          return{
 
-            case POST_ACTIVITIES:
-                return {
-                  ...state, // retorna una copia de todo el estado
-                };
+          }
+        case ORDER_POPULATION:
+          return{
+
+          }
+        case ORDER_NAME:
+          return{
+            
+          }
+            // case POST_ACTIVITIES:
+            //     return {
+            //       ...state, // retorna una copia de todo el estado
+            //     };
           
 
         default:

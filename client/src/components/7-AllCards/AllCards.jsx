@@ -48,7 +48,9 @@ const AllCards = () => {
                 ></CardCountry>
                 )
                 : 
-                <h1>Loanding...</h1>}
+                
+                <h1>Loanding...</h1>
+                }
                 
             </div>
          </div>

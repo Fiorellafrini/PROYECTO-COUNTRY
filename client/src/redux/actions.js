@@ -3,7 +3,11 @@ import { GET_COUNTRIES } from "./actionsTypes";
 import { GET_ACTIVITIES } from "./actionsTypes";
 import { GET_DETAIL } from "./actionsTypes";
 import { SEARCH_COUNTRIES_BY_NAME } from "./actionsTypes"
-// import { CLEAN_DETAIL } from "./actionsTypes";
+import { DELETE_COUNTRY } from "./actionsTypes";
+import { FILTER_ACTIVITY } from "./actionsTypes";
+import { FILTER_CONTINENT } from "./actionsTypes";
+import { ORDER_POPULATION } from "./actionsTypes"
+import { ORDER_NAME } from "./actionsTypes";
 // import { POST_ACTIVITIES } from "./actionsTypes";
 
 export const getCountries = () => { //siempre que solicito info a un server(donde uso axios o fetch), se retorna otra fn e interviene el middlewerw y lo manda al reducer
@@ -69,20 +73,6 @@ export function getActivities() {
   //   };
   // }
 
-  // export const cleanDetail = () => {
-  //   return {type: CLEAN_DETAIL}
-  // }
-
-  export function postActivities(payload) {
-    return async (dispatch) => {
-      const response = await axios.post(
-        "http://localhost:3001/activities",
-        payload
-      );
-      return response;
-    };
-  }
-
   export const getCountryName = (name) => {
     return function (dispatch) {
       fetch(`http://localhost:3001/countries?name=${name}`)
@@ -95,11 +85,49 @@ export function getActivities() {
   };
 
 
-  export const filterContinent = () =>{
 
+//   export const deleteCountry = (id) => {
+//     // return { type: DELETE_PERSONAJE, payload: id}
+//     return async (dispatch) => {
+//         const response = await axios.delete(`http://localhost:3001/countries/delete/${id}`);
+
+//         return dispatch({
+//             type: DELETE_COUNTRY, payload: response.data
+//         })
+//     }
+// }
+
+export const deleteCountry = () => {
+  return {type: DELETE_COUNTRY}
+}
+
+ 
+
+
+  export const filterContinent = (payload) =>{
+      return { type: FILTER_CONTINENT, payload}
   }
 
 
-  export const filterActivity = () => {
+  export const filterActivity = (payload) => {
+      return { type: FILTER_ACTIVITY, payload}
 
   }
+
+  export const orderPopulation = (payload) => {
+      return { type: ORDER_POPULATION, payload}
+  }
+
+  export const orderName = (payload) => {
+    return { type: ORDER_NAME, payload}
+}
+
+  // export function postActivities(payload) {
+  //   return async (dispatch) => {
+  //     const response = await axios.post(
+  //       "http://localhost:3001/activities",
+  //       payload
+  //     );
+  //     return response;
+  //   };
+  // }

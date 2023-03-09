@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import {useDispatch} from "react-redux";
-import { getCountryName } from "../../redux/actions";
+import { deleteCountry, getCountries, getCountryName } from "../../redux/actions";
 import styles from "./Searchbar.module.css"
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 const Searchbar = () => {
    const dispatch = useDispatch();
+
    const [name, setName] = useState("");
 
    function handleChange(event){
@@ -19,22 +20,18 @@ const Searchbar = () => {
     setName("")
    }
    
-
+   const reset = () => {
+    dispatch(deleteCountry())
+    dispatch(getCountries())
+}
     return (
         <div>
-            <input
-            className={styles.input}
-            type="text"
-            placeholder="Search country..."e
-            onChange={(event)=> handleChange(event)}
-            ></input>
-            <button
-            className={styles.button}
-            type="submit"
-            onClick={(event)=> handlSubmit(event)}
-            >🔍</button>
-
-
+            <input className={styles.input} type="text" placeholder="Search country..." onChange={(event)=> handleChange(event)}></input>
+            <button className={styles.button} type="submit" onClick={(event)=> handlSubmit(event)}>🔍</button>
+            <Link to="/home">
+                <button className={styles.btn} onClick={reset} >Delete Search 🗑</button>
+            </Link>
+        
         </div>
     )
 }

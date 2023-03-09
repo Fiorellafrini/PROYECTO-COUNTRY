@@ -11,6 +11,21 @@
   
   }
 
+  .btn{
+    background: #e9000000;
+    border:none;
+    padding: 5px;
+    font-family: "fontnew2";
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    
+    /* color: rgb(0, 0, 0); */
+    margin-bottom: 10px;
+    /* transition: all ease-in-out 0.2s; */
+    /* border-radius: 3px; */
+  
+  }
+
   .input {
     background: #fefeff73;
     width: 270px;
@@ -27,10 +42,21 @@
   
   .input::placeholder {
     font-size: 20px;
-  }
+    color: rgba(0, 0, 0, 0.466);
+    /* background: rgba(0, 128, 0, 0.219); */
 
+  }
+.input:hover{
+  background: rgba(0, 128, 0, 0.116);
+
+}
   
-  .boton:hover {
+  .button:hover {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background: rgba(255, 2, 2, 0.151);
     font-size: 20px;
     cursor: pointer;
   }
