@@ -35,7 +35,7 @@ export default function Filters({
             className={styles.filtro}
             onChange={(event) => handleFilterActivity(event)}
           >
-            <option value="actividad">ACTIVITIES</option>
+            <option value="actividad">All Activities</option>
             {activities.map((act) => {
               return (
                 <option key={act.id} value={act.name}>

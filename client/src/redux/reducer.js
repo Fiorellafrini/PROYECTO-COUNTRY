@@ -29,7 +29,7 @@ const rootReducer = (state = initialState, action) => {
             return {
                 ...state,
                 allCountries: action.payload, // ese payload es el que viene de la actions, en este caso tiene la data de todas conuntrys.
-        filteredCountries: action.payload,
+                filteredCountries: action.payload,
 
             };
         case GET_ACTIVITIES:
@@ -65,17 +65,6 @@ const rootReducer = (state = initialState, action) => {
               allCountries: filter,
             };
         
-            // case FILTER_CONTINENT:
-            // const countries2 = state.allCountries;
-            // const filteredCountries = action.payload === action.payload
-            //     ? countries2
-            //     : countries2.filter((pais) => pais.continent === action.payload);
-            // return {
-            //   ...state,
-            //   allCountries: filteredCountries
-            // };
-
-      
             
         case FILTER_ACTIVITY:
               const allCount = state.allCountries;
@@ -87,7 +76,7 @@ const rootReducer = (state = initialState, action) => {
                     );
               return {
                 ...state,
-                filteredCountries: filtremos,
+                allCountries: filtremos,
               };
         
         case ORDER_POPULATION:

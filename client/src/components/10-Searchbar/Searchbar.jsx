@@ -14,10 +14,10 @@ const Searchbar = () => {
     setName(event.target.value);
    }
 
-   function handlSubmit(event){
-    event.preventDefault();
+   function handleSubmit(event){
+    event.preventDefault(); // evita que se actualice la pagina 
     dispatch(getCountryName(name));
-    setName("")
+    setName(" ")
    }
    
    const reset = () => {
@@ -27,7 +27,7 @@ const Searchbar = () => {
     return (
         <div>
             <input className={styles.input} type="text" placeholder="Search country..." onChange={(event)=> handleChange(event)}></input>
-            <button className={styles.button} type="submit" onClick={(event)=> handlSubmit(event)}>🔍</button>
+            <button className={styles.button} type="submit" onClick={(event)=> handleSubmit(event)}>🔍</button>
             <Link to="/home">
                 <button className={styles.btn} onClick={reset} >Delete Search 🗑</button>
             </Link>
