@@ -18,8 +18,7 @@ const initialState= { //ESTADOS QUE NECESITO, las cosas que quiero guardar
     allCountries: [], //DONDE VOY A GUARDAR TODAS LAS COUNTRIES ,Es necesario hacer una copia de todos los paises para realizar los filtrados
     detail: {}, //para guardar una sola
     activities: [], //almaceno las activities
-    // filters: {"ascendente", "descendente"}, 
-    // filters: { activities: "All", continents: "All" },
+    // allCountries2: [],
     filteredCountries: [],
   };
 
@@ -29,7 +28,9 @@ const rootReducer = (state = initialState, action) => {
         case GET_COUNTRIES:
             return {
                 ...state,
-                allCountries: action.payload // ese payload es el que viene de la actions, en este caso tiene la data de todas conuntrys.
+                allCountries: action.payload, // ese payload es el que viene de la actions, en este caso tiene la data de todas conuntrys.
+        filteredCountries: action.payload,
+
             };
         case GET_ACTIVITIES:
             return {
@@ -54,13 +55,41 @@ const rootReducer = (state = initialState, action) => {
               allCountries:[]
           }
         case FILTER_CONTINENT:
-          return{
+            const countries2 = state.filteredCountries;
+            const filter =
+              action.payload === "All"
+                ? countries2
+                : countries2.filter((pais) => pais.continent === action.payload);
+            return {
+              ...state,
+              allCountries: filter,
+            };
+        
+            // case FILTER_CONTINENT:
+            // const countries2 = state.allCountries;
+            // const filteredCountries = action.payload === action.payload
+            //     ? countries2
+            //     : countries2.filter((pais) => pais.continent === action.payload);
+            // return {
+            //   ...state,
+            //   allCountries: filteredCountries
+            // };
 
-          }
+      
+            
         case FILTER_ACTIVITY:
-          return{
-
-          }
+              const allCount = state.allCountries;
+              const filtremos =
+                action.payload === "actividad"
+                  ? allCount
+                  : allCount.filter((p) =>
+                      p.activities.some((act) => act.name === action.payload)
+                    );
+              return {
+                ...state,
+                filteredCountries: filtremos,
+              };
+        
         case ORDER_POPULATION:
           return{
 
@@ -80,3 +109,4 @@ const rootReducer = (state = initialState, action) => {
     }
 }
 export default rootReducer;
+
